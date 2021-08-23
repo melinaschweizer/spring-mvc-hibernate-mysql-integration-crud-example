@@ -1,14 +1,17 @@
-#Spring MVC Hibernate Mysql integration CRUD Example 
 
-Guide
 
-This is a part of the tutorial http://javabycode.com/spring-framework-tutorial/spring-mvc-tutorial/spring-mvc-hibernate-mysql-integration-crud-example-tutorial.html
+Prerequisites: 
+Java 8
+Tomcat 9
 
-What you'll need
+Instructions for setting up local environment using Eclipsem integrated with Tomcat: 
+https://quip-amazon.com/bzbzA1jHOKoB/Setup-Local-Environment
 
-JDK 1.7 or later
-Maven 3 or later
-Spring MVC 4.2.6.RELEASE  
-Build
+If you're not using eclipse: mvn clean install 
+And you'll have to copy the generated war file into the tomcat/webapps folder, which will expand it into its own directory.
+App should be available under localhost:8080.
 
-mvn clean install    
+Note: This project was based on http://javabycode.com/spring-framework-tutorial/spring-mvc-tutorial/spring-mvc-hibernate-mysql-integration-crud-example-tutorial.html
+
+
+
