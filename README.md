@@ -1,7 +1,9 @@
 
 
-Prerequisites: 
-Java 8
+Prerequisites:
+
+Java 11
+
 Tomcat 9
 
 Instructions for setting up local environment using Eclipsem integrated with Tomcat: 
