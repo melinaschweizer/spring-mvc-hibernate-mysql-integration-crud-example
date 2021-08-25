@@ -1,4 +1,4 @@
-package com.javabycode.springmvc.configuration;
+package com.myfarmer.provman.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

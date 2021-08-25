@@ -1,4 +1,4 @@
-package com.javabycode.springmvc.configuration;
+package com.myfarmer.provman.configuration;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.javabycode.springmvc")
+@ComponentScan(basePackages = "com.myfarmer.provman")
 public class MyWebConfig {
 	
 	@Bean

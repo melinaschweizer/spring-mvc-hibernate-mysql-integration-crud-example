@@ -1,4 +1,4 @@
-package com.javabycode.springmvc.configuration;
+package com.myfarmer.provman.configuration;
 
 import java.util.Properties;
 
@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({ "com.javabycode.springmvc.configuration" })
+@ComponentScan({ "com.myfarmer.provman.configuration" })
 @PropertySource(value = { "classpath:jdbc.properties" })
 public class MyHibernateConfig {
 
@@ -27,9 +27,11 @@ public class MyHibernateConfig {
 
     @Bean
     public LocalSessionFactoryBean sessionFactory() {
+    	System.out.println("**INITIALIZING SESSION FACTORY3");
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { "com.javabycode.springmvc.model" });
+        // where to load @Entity classes from
+        sessionFactory.setPackagesToScan(new String[] { "com.myfarmer.provman.model" });
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
      }

@@ -1,4 +1,4 @@
-package com.javabycode.springmvc.dao;
+package com.myfarmer.provman.dao;
 
 import java.io.Serializable;
 
